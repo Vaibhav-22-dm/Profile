@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/14f69f2d47.js" crossorigin="anonymous"></script>
+    <title>Vaibhav Mohite</title>
+</head>
+
+<body>
+    <header id="header" class=" container-fluid" style="position:fixed;top:0;background:white"></header>
+    <nav id="mobile-nav"></nav>
+    <div id="mobile-body-overlay" style="display: none"></div>
+    <section class="about-banner container-fluid">
+        <div class="container py-5">
+            <div class="row py-5">
+                <div class="col-12">
+                    <h1 class="font-weight-bold text-white text-center" style="font-size:50px;">Portfolio</h1>
+                    <p class="text-white link-nav text-center">
+                        <a href="index.html" style="color:white">Home </a>
+                        <i class="fas fa-arrow-right text-light mx-3" style="text-decoration: none !important;"></i>
+                        <a href="portfolio.html"
+                            style="text-decoration: none !important;color:white">Portfolio</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio-area section-gap" id="portfolio">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="menu-content col-lg-8">
+                    <div class="title text-center">
+                        <h1 class="font-weight-bold mb-5">My Projects</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="filters">
+                <ul>
+                    <li class="active" id="all">All</li>
+                    <li id="frontend">Frontend</li>
+                    <li id="jsgames">JS Games</li>
+                    <li id="django">Django</li>
+                    <li id="reactjs">ReactJS</li>
+                    <li id="fullstack">Django + React</li>
+                </ul>
+            </div>
+            <div class="filters-content">
+                <div class="row pt-4">
+                    <div class="col-lg-4 col-md-6 my-3 px-4 frontend project-container">
+                        <div class="container px-0 project" style="position: relative;">
+                            <div class="overlay">
+                                <a href="https://vaibhav-22-dm.github.io/UPSIDA/" target="_blank"><i class="fas fa-binoculars" style="color:white;font-size:50px"></i></a>
+                            </div>
+                            <img src="img/upsida.png" alt="" class="img-fluid project-img">
+                            <div class="project-info">
+                                <h4 class="font-weight-bold text-center pt-3" id="gth"> UPSIDA Website </h4>
+                                <p class="text-muted font-weight-light text-center pt-3">This website was developed as a project for a design-a-thon in collaboration with otherv two fellow team mates.</p>
+                                <p class="text-dark font-weight-light text-center"><b>Technology:</b> HTML, CSS3, JS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-3 px-4 frontend project-container">
+                        <div class="container px-0 project">
+                            <div class="overlay">
+                                <a href="https://github.com/UPSIDA" target="_blank"><i class="fas fa-binoculars" style="color:white;font-size:50px"></i></a>
+                            </div>
+                            <img src="img/cafe.png" alt="" class="img-fluid project-img">
+                            <div class="project-info">
+                                <h4 class="font-weight-bold text-center pt-3"> Cafe Website </h4>
+                                <p class="text-muted font-weight-light text-center pt-3">This website was developed as a project for a internship task in collaboration with one of my friends - Harsh Verma.</p>
+                                <p class="text-dark font-weight-light text-center"><b>Technology:</b> HTML, CSS3, JS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-3 px-4 games project-container">
+                        <div class="container px-0 project">
+                            <div class="overlay">
+                                <a href="https://vaibhav-22-dm.github.io/snake-game/" target="_blank"><i class="fas fa-binoculars" style="color:white;font-size:50px"></i></a>
+                            </div>
+                            <img src="img/snake-game.png" alt="" class="img-fluid project-img">
+                            <div class="project-info">
+                                <h4 class="font-weight-bold text-center pt-3"> Nokia Snake Game</h4>
+                                <p class="text-muted font-weight-light text-center pt-3">This game was made using JS while following a freeCodeCamp Tutorial. It is grid based games. It is responsive in both mobile phones and laptops.</p>
+                                <p class="text-dark font-weight-light text-center"><b>Technology:</b> HTML, CSS3, JS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-3 px-4 games project-container">
+                        <div class="container px-0 project">
+                            <div class="overlay">
+                                <a href="https://vaibhav-22-dm.github.io/space-invaders/" target="_blank"><i class="fas fa-binoculars" style="color:white;font-size:50px"></i></a>
+                            </div>
+                            <img src="img/space-invaders.png" alt="" class="img-fluid project-img">
+                            <div class="project-info">
+                                <h4 class="font-weight-bold text-center pt-3"> Space Invaders Game </h4>
+                                <p class="text-muted font-weight-light text-center pt-3">This game was made using JS while following a freeCodeCamp Tutorial. It is grid based games. It is responsive in both mobile phones and laptops.</p>
+                                <p class="text-dark font-weight-light text-center"><b>Technology:</b> HTML, CSS3, JS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-3 px-4 games project-container">
+                        <div class="container px-0 project">
+                            <div class="overlay">
+                                <a href="https://vaibhav-22-dm.github.io/whack-a-mole/" target="_blank"><i class="fas fa-binoculars" style="color:white;font-size:50px"></i></a>
+                            </div>
+                            <img src="img/whack-a-mole.png" alt="" class="img-fluid project-img">
+                            <div class="project-info">
+                                <h4 class="font-weight-bold text-center pt-3"> Whack-a-mole Game</h4>
+                                <p class="text-muted font-weight-light text-center pt-3">This game was made using JS while following a freeCodeCamp Tutorial. It is grid based games. It is responsive in both mobile phones and laptops.</p>
+                                <p class="text-dark font-weight-light text-center"><b>Technology:</b> HTML, CSS3, JS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-3 px-4 django project-container">
+                        <div class="container px-0 project">
+                            <div class="overlay">
+                                <a href="https://github.com/UPSIDA" target="_blank"><i class="fas fa-binoculars" style="color:white;font-size:50px"></i></a>
+                            </div>
+                            <img src="img/todo_django.png" alt="" class="img-fluid project-img">
+                            <div class="project-info">
+                                <h4 class="font-weight-bold text-center pt-3"> Todo App </h4>
+                                <p class="text-muted font-weight-light text-center pt-3">This project was developed as a practice project for a django. It is a todolist app in which we can do basic CRUD Functions</p>
+                                <p class="text-dark font-weight-light text-center"><b>Technology:</b> Django(REST API) and AJAX</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-3 px-4 django project-container">
+                        <div class="container px-0 project">
+                            <div class="overlay">
+                                <a href="https://github.com/UPSIDA" target="_blank"><i class="fas fa-binoculars" style="color:white;font-size:50px"></i></a>
+                            </div>
+                            <img src="img/cap.png" alt="" class="img-fluid project-img">
+                            <div class="project-info">
+                                <h4 class="font-weight-bold text-center pt-3"> CA Portal Website </h4>
+                                <p class="text-muted font-weight-light text-center pt-3">This project was developed for E-cell IIT Kharagpur. It is Portal for Campus Ambassadors of IIT Kharagpur.</p>
+                                <p class="text-dark font-weight-light text-center"><b>Technology:</b> Django </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-3 px-4 django project-container">
+                        <div class="container px-0 project">
+                            <div class="overlay">
+                                <a href="https://github.com/UPSIDA" target="_blank"><i class="fas fa-binoculars" style="color:white;font-size:50px"></i></a>
+                            </div>
+                            <img src="img/cap.png" alt="" class="img-fluid project-img">
+                            <div class="project-info">
+                                <h4 class="font-weight-bold text-center pt-3"> Chat App </h4>
+                                <p class="text-muted font-weight-light text-center pt-3">This project uses Websockets for creating one to one chattinh rooms. It also saves the chat history of the users.</p>
+                                <p class="text-dark font-weight-light text-center"><b>Technology:</b> Django & Websockets</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-3 px-4 django-react project-container">
+                        <div class="container px-0 project">
+                            <div class="overlay">
+                                <a href="https://github.com/UPSIDA" target="_blank"><i class="fas fa-binoculars" style="color:white;font-size:50px"></i></a>
+                            </div>
+                            <img src="img/todo_reactjs.png" alt="" class="img-fluid project-img">
+                            <div class="project-info">
+                                <h4 class="font-weight-bold text-center pt-3"> Todo App Using ReactJS </h4>
+                                <p class="text-muted font-weight-light text-center pt-3">This is a Todo website. It has basic CRUD operations and it's frontent is created using ReactJS.</p>
+                                <p class="text-dark font-weight-light text-center"><b>Technology:</b> Django & ReactJS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-3 px-4 django-react project-container">
+                        <div class="container px-0 project">
+                            <div class="overlay">
+                                <a href="https://github.com/UPSIDA" target="_blank"><i class="fas fa-binoculars" style="color:white;font-size:50px"></i></a>
+                            </div>
+                            <img src="img/cap.png" alt="" class="img-fluid project-img">
+                            <div class="project-info">
+                                <h4 class="font-weight-bold text-center pt-3"> Blog Website </h4>
+                                <p class="text-muted font-weight-light text-center pt-3">This is my personal blog website. It has functionality of posting comments and replying to others' comments also.</p>
+                                <p class="text-dark font-weight-light text-center"><b>Technology:</b> Django & ReactJS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-3 px-4 django-react project-container">
+                        <div class="container px-0 project">
+                            <div class="overlay">
+                                <a href="https://github.com/UPSIDA" target="_blank"><i class="fas fa-binoculars" style="color:white;font-size:50px"></i></a>
+                            </div>
+                            <img src="img/quiz.png" alt="" class="img-fluid project-img">
+                            <div class="project-info">
+                                <h4 class="font-weight-bold text-center pt-3"> Student Teacher Website </h4>
+                                <p class="text-muted font-weight-light text-center pt-3">This is website is portal where teachers can create quizes and students canattempt those quizes. Authentication of user is also added.</p>
+                                <p class="text-dark font-weight-light text-center"><b>Technology:</b> Django & ReactJS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <footer class="footer-area section-gap"></footer>
+</body>
+<script src="navbar.js"></script>
+<script src="main.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        document.getElementById('nav-portfolio').classList.add('active')
+        document.getElementById('mobile-nav-portfolio').classList.add('active')
+        const images = document.querySelectorAll('.project-img')
+        console.log(images)
+        images.forEach((img, index) => {
+            console.log(img)
+            const overlays = document.querySelectorAll('.overlay')
+            var height = img.offsetHeight;
+            var width = img.offsetWidth;
+            console.log(width)
+            overlays[index].style.height = height + 'px';
+            overlays[index].style.width = width + 'px';
+            overlays[index].classList.add('text-center');
+
+            img.addEventListener('mouseover', overlay)
+            img.addEventListener('mouseout', overout)
+        })
+
+        function overlay(){
+            this.parentNode.children[0].style.zIndex = "3"
+            this.parentNode.children[0].style.opacity = "0.85"
+        }
+
+        function overout(){
+            this.parentNode.children[0].style.opacity = "0"
+            this.parentNode.children[0].style.zIndex = "1"
+        }
+
+    })
+
+    
+</script>
+</html>
