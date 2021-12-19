@@ -292,23 +292,33 @@ nav a{
     color: #8490ff !important;
 }
 
+.overlay-outer-box{
+    position: relative;
+    height: fit-content;
+}
 
 .overlay{
     background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
     position: absolute;
     top: 0;
-    z-index: 1;
     opacity: 0;
-    transition: 1s ease;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.2s ease;
+}
+
+
+.project:hover .overlay{
+    opacity: 0.8;
 }
 
 .project-img{
     position: relative;
-    z-index: 2;
+    top: 0;
 }
 
 @media screen and (max-width: 420px){
