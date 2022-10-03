@@ -43,14 +43,14 @@ document.addEventListener('DOMContentLoaded', function(){
         })
     })
 
-    fullstack.addEventListener('click', () => {
-        filters.forEach(filter => filter.classList.remove('active'))
-        fullstack.classList.add('active')
-        projects.forEach((arr) => {
-            if(!arr.classList.contains('django-react')) arr.style.display = 'none';
-            else arr.style.display = 'flex'
-        })
-    })
+    // fullstack.addEventListener('click', () => {
+    //     filters.forEach(filter => filter.classList.remove('active'))
+    //     fullstack.classList.add('active')
+    //     projects.forEach((arr) => {
+    //         if(!arr.classList.contains('django-react')) arr.style.display = 'none';
+    //         else arr.style.display = 'flex'
+    //     })
+    // })
 
     react.addEventListener('click', () => {
         filters.forEach(filter => filter.classList.remove('active'))
