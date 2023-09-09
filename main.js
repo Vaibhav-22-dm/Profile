@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function(){
     const all = document.getElementById('all')
     const frontend = document.getElementById('frontend')
-    const games = document.getElementById('jsgames')
+    // const games = document.getElementById('jsgames')
     const django = document.getElementById('django')
-    const fullstack = document.getElementById('fullstack')
+    const android = document.getElementById('android')
     const react = document.getElementById('reactjs')
     const projects = document.querySelectorAll('.project-container')
     const filters = document.querySelectorAll('.filters ul li')
@@ -25,14 +25,14 @@ document.addEventListener('DOMContentLoaded', function(){
         })
     })
 
-    games.addEventListener('click', () => {
-        filters.forEach(filter => filter.classList.remove('active'))
-        games.classList.add('active')
-        projects.forEach((arr) => {
-            if(!arr.classList.contains('games')) arr.style.display = 'none';
-            else arr.style.display = 'flex'
-        })
-    })
+    // games.addEventListener('click', () => {
+    //     filters.forEach(filter => filter.classList.remove('active'))
+    //     games.classList.add('active')
+    //     projects.forEach((arr) => {
+    //         if(!arr.classList.contains('games')) arr.style.display = 'none';
+    //         else arr.style.display = 'flex'
+    //     })
+    // })
 
     django.addEventListener('click', () => {
         filters.forEach(filter => filter.classList.remove('active'))
@@ -43,14 +43,14 @@ document.addEventListener('DOMContentLoaded', function(){
         })
     })
 
-    // fullstack.addEventListener('click', () => {
-    //     filters.forEach(filter => filter.classList.remove('active'))
-    //     fullstack.classList.add('active')
-    //     projects.forEach((arr) => {
-    //         if(!arr.classList.contains('django-react')) arr.style.display = 'none';
-    //         else arr.style.display = 'flex'
-    //     })
-    // })
+    android.addEventListener('click', () => {
+        filters.forEach(filter => filter.classList.remove('active'))
+        android.classList.add('active')
+        projects.forEach((arr) => {
+            if (!arr.classList.contains('android')) arr.style.display = 'none';
+            else arr.style.display = 'flex'
+        })
+    })
 
     react.addEventListener('click', () => {
         filters.forEach(filter => filter.classList.remove('active'))
