@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     fetch(URL + '?id=' + myBlog)
         .then(res => res.json())
         .then(data => {
-            const blog = data.blog
+            var blog = data.blog
             document.querySelector('.single-post').innerHTML =
                 `
         <div class="col-lg-12">
@@ -107,8 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
     fetch(URL + '?page=1&pageSize=5')
         .then((response) => response.json())
         .then((data) => {
-            console.log(data)
-            blogs = data.blogs
+            var blogs = data.blogs
             content = document.querySelector('.popular-post-list')
             blogs.forEach((blog) => {
                 content.innerHTML +=

@@ -16,8 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // }
     // var csrftoken = getCookie('csrftoken');
 
-    var blogs = []
-
     const category = location.search.split('category=')[1] || ""
 
     const URL = "https://script.google.com/macros/s/AKfycbx2xNg-WctUEWq0mL2tBEk8QnmHwnt6dFiwu_z4gkbSRqXJQC6IRlwiwcmBzAMgdJsZrA/exec"
@@ -26,8 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
         fetch(url)
             .then((response) => response.json())
             .then((data) => {
-                console.log(data)
-                blogs = data.blogs
+                var blogs = data.blogs
                 content = document.querySelector('.posts-list')
                 content.innerHTML = ''
                 blogs.forEach((blog) => {
@@ -92,19 +89,18 @@ document.addEventListener('DOMContentLoaded', function () {
     fetch(URL + '?page=1&pageSize=5')
         .then((response) => response.json())
         .then((data) => {
-            console.log(data)
-            blogs = data
+            var blogs = data.blogs
             content = document.querySelector('.popular-post-list')
             blogs.forEach((blog) => {
                 content.innerHTML +=
                     `
             <div class="single-post-list d-flex flex-row align-items-center">
                 <div class="thumb">
-                    <img class="img-fluid" src="${blog.image}" alt="" style="height:60px;width:80px;">
+                    <img class="img-fluid" src="${blog.Image}" alt="" style="height:60px;width:80px;">
                 </div>
                 <div class="details">
                     <a href="blog_single.html?blog=${blog.ID}">
-                        <h6>${blog.title}</h6>
+                        <h6>${blog.Title}</h6>
                     </a>
                 </div>
             </div>
