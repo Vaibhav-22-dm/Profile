@@ -1,0 +1,113 @@
+.single-post-area {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.single-post-area .navigation-area {
+    border-top: 1px solid #eee;
+    padding-top: 30px;
+}
+
+.comments-area {
+    background: #fafaff;
+    border: 1px solid #eee;
+    padding: 50px 20px;
+    margin-top: 50px;
+}
+
+.comments-area h4 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.comments-area .btn-reply {
+    background-color: #fff;
+    color: #222;
+    border: 1px solid #eee;
+    padding: 8px 30px;
+    display: block;
+    font-weight: 600;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.comment-form {
+    background: #fafaff;
+    text-align: center;
+    border: 1px solid #eee;
+    padding: 50px 20px;
+    margin-top: 50px;
+}
+
+.comment-form h4 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.comment-form .form-control {
+    padding: 12px;
+    background: #fff;
+    border: none;
+    border-radius: 0px;
+    width: 100%;
+    font-size: 13px;
+    color: #777777;
+}
+
+.comment-form .primary-btn {
+    border-radius: 0px !important;
+    border: 1px solid transparent;
+    color: #fff;
+    font-weight: 600;
+}
+
+.comment-form .name {
+    padding-left: 0px;
+}
+
+.comment-form .email {
+    padding-right: 0px;
+}
+
+.comments-area .date {
+    font-size: 13px;
+    color: #cccccc;
+}
+
+.comments-area .thumb {
+    margin-right: 20px;
+}
+
+.single-post-area .navigation-area .nav-left {
+    text-align: left;
+}
+
+.single-post-area .navigation-area .nav-left .thumb {
+    margin-right: 20px;
+    background: #000;
+}
+
+.primary-btn {
+    background: #8490ff;
+    line-height: 42px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    font-weight: 500;
+    position: relative;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    position: relative;
+}
+
+.feature-img{
+    max-height: 350px;
+    overflow: hidden;
+}

@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+
     document.getElementsByTagName('header')[0].innerHTML = `
     <div class="row col-lg-10 mx-auto py-3 px-0 justify-content-between">
         <div class="logo col-lg-6 col-8 justify-content-start pl-0 row align-items-center">
@@ -11,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <a href="portfolio.html" class="px-3 text-dark nav-items" id="nav-portfolio">PORTFOLIO</a>
             <a href="blog.html" class="px-3 text-dark nav-items" id="nav-blog">BLOG</a>
             <a href="contact.html" class="px-3 text-dark nav-items " id="nav-contact">CONTACT</a>
+            ${localStorage.getItem('access')===null?`<a href="login.html" class="px-3 text-dark nav-items " id="nav-login">LOGIN</a>`:`<a href="#" onclick='logout()' class="px-3 text-dark nav-items nav-logout" id="nav-login">LOGOUT</a>`}
         </nav>
         <nav class="menu-icon col-4 row justify-content-end align-items-center">
             <i class="fas fa-bars" style="font-size:25px;"  id="menu-icon"></i>
@@ -25,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <li><a href="portfolio.html" id="mobile-nav-portfolio">Portfolio</a></li>
             <li><a href="blog.html" id="mobile-nav-blog">Blog</a></li>
             <li><a href="contact.html" id="mobile-nav-contact">Contact</a></li>
+            ${localStorage.getItem('access')===null?`<li><a href="login.html" id="mobile-nav-login">Login</a></li>`:`<li><a href="#" class="nav-logout" onclick='logout()' id="mobile-nav-login">Logout</a></li>`}
     </ul>
     `
 
@@ -97,7 +100,6 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
     </div>
     `
-
     const modal = document.querySelector('#mobile-body-overlay')
     const modal_nav = document.querySelector('#mobile-nav')
     window.onclick = function(event) {
@@ -107,4 +109,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       }
 
+    document.querySelectorAll('.nav-logout').forEach((item) => {
+        item.addEventListener('click',() => {
+            localStorage.removeItem('access')
+            localStorage.removeItem('refresh')
+            window.location.href = 'index.html'
+        })
+    })
 })
