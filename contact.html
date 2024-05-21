@@ -66,19 +66,26 @@
                     </div>
                 </div>
                 <div class="col-lg-8">
-                    <form class="form-area contact-form text-right" id="myForm" action="mail.php" method="post">
+                    <form class="form-area contact-form text-right" id="myForm">
                         <div class="row">
                             <div class="col-lg-6 form-group">
-                                <input name="name" placeholder="Enter your name" required="" type="text" class="form-control mb-3">
-                                <input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" class="form-control my-3" required="" type="email">
-                                <input name="subject" placeholder="Enter subject" class="form-control mb-3" required="" type="text">
+                                <input id="name" name="name" placeholder="Enter your name" required="" type="text"
+                                    class="form-control mb-3">
+                                <input id="email" name="email" placeholder="Enter email address"
+                                    pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+                                    class="form-control my-3" required="" type="email">
+                                <input id="subject" name="subject" placeholder="Enter subject" class="form-control mb-3"
+                                    required="" type="text">
                             </div>
                             <div class="col-lg-6 form-group">
-                                <textarea class="form-control mb-3" name="message" placeholder="Enter Messege" required=""></textarea>
+                                <textarea id="message" class="form-control mb-3" name="message"
+                                    placeholder="Enter Messege" required=""></textarea>
                             </div>
                             <div class="col-lg-12">
                                 <div class="alert-msg" style="text-align: left;"></div>
-                                <button class="btn btn-primary px-3 py-2" style="float: right; border-radius:0; background-color: #8490ff;">Send Message</button>
+                                <button id="contact-btn" class="btn btn-primary px-3 py-2"
+                                    style="float: right; border-radius:0; background-color: #8490ff;">Send
+                                    Message</button>
                             </div>
                         </div>
                     </form>
@@ -89,11 +96,12 @@
     <footer class="footer-area section-gap"></footer>
 </body>
 <script src="navbar.js"></script>
-<script src="main.js"></script>
+<script src="contact.js"></script>
 <script>
-    document.addEventListener('DOMContentLoaded', function(){
+    document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('nav-contact').classList.add('active')
         document.getElementById('mobile-nav-contact').classList.add('active')
     })
 </script>
+
 </html>
